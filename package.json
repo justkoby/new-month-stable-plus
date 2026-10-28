@@ -1,0 +1,28 @@
+{
+  "name": "stable-plus-november",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "remotion studio",
+    "preview": "remotion studio",
+    "still": "remotion still src/index.ts NovemberAd out/poster.png --frame=500",
+    "render": "remotion render src/index.ts NovemberAd out/stable-plus-november.mp4 --codec=h264 --crf=16 --pixel-format=yuv420p",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/fraunces": "^5.3.0",
+    "@fontsource/manrope": "^5.3.0",
+    "@remotion/cli": "^4.0.539",
+    "@remotion/media": "^4.0.539",
+    "@remotion/transitions": "^4.0.539",
+    "lucide-react": "^1.62.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.539"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config": "^4.0.539",
+    "@types/react": "^18.3.31",
+    "typescript": "^7.0.2"
+  }
+}
