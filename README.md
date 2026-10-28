@@ -10,8 +10,7 @@ npm run render     # → out/stable-plus-november.mp4
 npm run still      # → out/poster.png (single frame)
 npm run typecheck
 ```
-If Remotion can't download its browser (offline/CI), point it at a local Chromium:
-`npx remotion render src/index.ts NovemberAd out/x.mp4 --browser-executable=<path> --chrome-mode=headless-shell`
+If Remotion cannot download its browser (offline/CI), `remotion.config.ts` falls back to a local headless Chromium; set `REMOTION_BROWSER=/path/to/chrome-headless-shell` to override.
 
 ## Editing
 - **All copy, contact details and logo path:** `src/config.ts` (`campaign`).
