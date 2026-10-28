@@ -7,8 +7,8 @@ export const theme = {
   white: '#FFFFFF',
   paper: '#F5F8FA',
   ink: '#0B2A3F',
-  display: "'Fraunces', Georgia, serif",
-  body: "'Manrope', system-ui, sans-serif",
+  display: "'Montserrat', system-ui, sans-serif",
+  body: "'Montserrat', system-ui, sans-serif",
 };
 
 // Social-media safe zone (Reels / TikTok UI overlays), in px on a 1080x1920 canvas.

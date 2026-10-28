@@ -25,11 +25,11 @@ export const EndCard: React.FC<{data: Campaign}> = ({data}) => {
       {/* Phase A — greeting */}
       <AbsoluteFill style={{opacity: 1 - aOut, paddingLeft: safe.left, paddingRight: safe.right, justifyContent: 'center'}}>
         <Line color={theme.green} start={6} width={160} top={540} left={safe.left} />
-        <div style={{fontFamily: theme.display, fontWeight: 800, color: theme.blue, lineHeight: 0.92, fontSize: 210, letterSpacing: '-0.02em', marginTop: -60}}>
+        <div style={{fontFamily: theme.display, fontWeight: 800, color: theme.blue, lineHeight: 0.92, fontSize: 190, letterSpacing: '-0.03em', marginTop: -60}}>
           <RevealText text={data.greeting[0]} start={8} stagger={3} style={{justifyContent: 'flex-start'}} />
-          <RevealText text={data.greeting[1]} start={20} stagger={3} style={{justifyContent: 'flex-start', flexWrap: 'nowrap', color: theme.blueDeep, fontSize: 124}} />
+          <RevealText text={data.greeting[1]} start={20} stagger={3} style={{justifyContent: 'flex-start', flexWrap: 'nowrap', color: theme.blueDeep, fontSize: 106}} />
         </div>
-        <div style={{marginTop: 54, opacity: msgP, transform: `translateY(${(1 - msgP) * 24}px)`, fontFamily: theme.display, fontStyle: 'italic', fontWeight: 600, fontSize: 52, lineHeight: 1.3, color: theme.ink, maxWidth: 800}}>
+        <div style={{marginTop: 54, opacity: msgP, transform: `translateY(${(1 - msgP) * 24}px)`, fontFamily: theme.display, fontStyle: 'italic', fontWeight: 600, fontSize: 42, lineHeight: 1.4, color: theme.ink, maxWidth: 800}}>
           {data.message}
         </div>
         <Line color={theme.blue} start={60} width={420} top={1330} left={safe.left} />
@@ -39,7 +39,7 @@ export const EndCard: React.FC<{data: Campaign}> = ({data}) => {
       {bf > -2 && (
         <AbsoluteFill style={{paddingLeft: safe.left, paddingRight: safe.right, paddingTop: safe.top + 30, alignItems: 'flex-start'}}>
           <Logo width={560} start={END_PHASE_B - 6} />
-          <div style={{marginTop: 38, fontFamily: theme.display, fontStyle: 'italic', fontWeight: 600, fontSize: 64, color: theme.ink, opacity: prog(frame, END_PHASE_B + 22, 24), transform: `translateY(${(1 - prog(frame, END_PHASE_B + 22, 24)) * 20}px)`}}>
+          <div style={{marginTop: 38, fontFamily: theme.display, fontStyle: 'italic', fontWeight: 600, fontSize: 50, color: theme.ink, opacity: prog(frame, END_PHASE_B + 22, 24), transform: `translateY(${(1 - prog(frame, END_PHASE_B + 22, 24)) * 20}px)`}}>
             {data.tagline}
           </div>
           <div style={{position: 'relative', height: 6, width: '100%', margin: '52px 0 64px'}}>

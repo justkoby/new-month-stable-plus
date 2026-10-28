@@ -18,8 +18,8 @@ const Block: React.FC<{start: number; label: string; color: string; children: Re
   );
 };
 
-const main: React.CSSProperties = {fontFamily: theme.body, fontWeight: 800, fontSize: 50, lineHeight: 1.2, color: theme.ink};
-const sub: React.CSSProperties = {fontFamily: theme.body, fontWeight: 500, fontSize: 36, lineHeight: 1.25, color: '#4A6578'};
+const main: React.CSSProperties = {fontFamily: theme.body, fontWeight: 800, fontSize: 44, lineHeight: 1.25, color: theme.ink};
+const sub: React.CSSProperties = {fontFamily: theme.body, fontWeight: 500, fontSize: 31, lineHeight: 1.3, color: '#4A6578'};
 
 export const ContactInfo: React.FC<{data: Campaign; start?: number}> = ({data, start = 0}) => {
   const frame = useCurrentFrame();
@@ -39,7 +39,7 @@ export const ContactInfo: React.FC<{data: Campaign; start?: number}> = ({data, s
           <div key={i} style={main}>{l}</div>
         ))}
       </Block>
-      <div style={{opacity: hp, transform: `translateY(${(1 - hp) * 20}px)`, fontFamily: theme.body, fontWeight: 700, fontSize: 42, color: theme.blueDeep, paddingLeft: 34}}>
+      <div style={{opacity: hp, transform: `translateY(${(1 - hp) * 20}px)`, fontFamily: theme.body, fontWeight: 700, fontSize: 38, color: theme.blueDeep, paddingLeft: 34}}>
         {data.handle}
       </div>
     </div>

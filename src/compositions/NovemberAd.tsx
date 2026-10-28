@@ -11,7 +11,7 @@ const Caption: React.FC<{text: string; start: number; end: number}> = ({text, st
   <AbsoluteFill>
     <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 760, background: 'linear-gradient(180deg, rgba(0,60,100,0) 0%, rgba(0,60,100,0.62) 100%)'}} />
     <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'flex-start', paddingLeft: safe.left, paddingBottom: safe.bottom}}>
-    <div style={{fontFamily: theme.display, fontStyle: 'italic', fontWeight: 600, fontSize: 62, color: theme.white, textShadow: '0 2px 18px rgba(0,40,70,0.55)'}}>
+    <div style={{fontFamily: theme.display, fontStyle: 'italic', fontWeight: 600, fontSize: 54, color: theme.white, textShadow: '0 2px 18px rgba(0,40,70,0.55)'}}>
       <RevealText text={text} start={start} stagger={4} by="word" exitAt={end} style={{justifyContent: 'flex-start'}} />
     </div>
     </AbsoluteFill>
@@ -27,7 +27,7 @@ const WelcomeReveal: React.FC<{text: string}> = ({text}) => {
     <AbsoluteFill>
       <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: `${rise * 44 + full * 56}%`, background: 'linear-gradient(180deg, rgba(255,255,255,0) 0%, #fff 22%)'}} />
       <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'flex-start', paddingLeft: safe.left, paddingBottom: safe.bottom + 20}}>
-        <div style={{fontFamily: theme.display, fontWeight: 800, fontSize: 94, whiteSpace: 'nowrap', color: theme.blue, letterSpacing: '-0.01em', opacity: 1 - full}}>
+        <div style={{fontFamily: theme.display, fontWeight: 800, fontSize: 76, whiteSpace: 'nowrap', color: theme.blue, letterSpacing: '-0.01em', opacity: 1 - full}}>
           <RevealText text={text} start={84} stagger={3} style={{justifyContent: 'flex-start', flexWrap: 'nowrap'}} />
         </div>
       </AbsoluteFill>
