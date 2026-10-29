@@ -38,7 +38,7 @@ export const EndCard: React.FC<{data: Campaign}> = ({data}) => {
       {/* Phase B — brand + contact */}
       {bf > -2 && (
         <AbsoluteFill style={{paddingLeft: safe.left, paddingRight: safe.right, paddingTop: safe.top + 30, alignItems: 'flex-start'}}>
-          <Logo width={560} start={END_PHASE_B - 6} />
+          <Logo width={500} start={END_PHASE_B - 6} />
           <div style={{marginTop: 38, fontFamily: theme.display, fontStyle: 'italic', fontWeight: 600, fontSize: 50, color: theme.ink, opacity: prog(frame, END_PHASE_B + 22, 24), transform: `translateY(${(1 - prog(frame, END_PHASE_B + 22, 24)) * 20}px)`}}>
             {data.tagline}
           </div>

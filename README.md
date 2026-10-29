@@ -1,4 +1,4 @@
-# Stable Plus Healthcare — Happy November (Remotion)
+# Stable Plus Pharmacy — Happy November (Remotion)
 
 9:16 · 1080×1920 · 30 fps · H.264 MP4 · ~20 s. Built with React + Remotion + TypeScript.
 
@@ -21,7 +21,7 @@ If Remotion cannot download its browser (offline/CI), `remotion.config.ts` falls
 
 ## Assets
 Original files remain untouched in the repo root. Working copies with clean names are in `public/assets/`
-(`logo-4x.png` is a Lanczos-upscaled copy of the 319×219 logo; `logo-original.png` is the untouched copy).
+(`logo-pharmacy.png` is a pure pixel crop of the supplied Stable Plus Pharmacy logo `logo-png-old.png`, with transparent margins removed; `logo-pharmacy-source.png` is the untouched copy).
 
 ## Audio
 Only the clips' own low-level ambience is used (faded per scene). No music is included because no licensed track is in the repo; drop one in `public/assets/audio/` and add an `<Audio>` to `NovemberAd.tsx`.

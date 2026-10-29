@@ -4,9 +4,9 @@ const s = (sec: number) => Math.round(sec * FPS);
 
 export const campaign = {
   month: 'November',
-  brand: 'Stable Plus Healthcare',
-  logo: 'assets/branding/logo-4x.png',
-  logoAspect: 319 / 219,
+  brand: 'Stable Plus Pharmacy',
+  logo: 'assets/branding/logo-pharmacy.png',
+  logoAspect: 546 / 382, // cropped pixels of the supplied Pharmacy logo, never scaled non-uniformly
   openingLine: "Every day, we're here for you.",
   handoverLine: 'Care you can count on.',
   greeting: ['HAPPY', 'NOVEMBER!'],
@@ -19,7 +19,8 @@ export const campaign = {
       ['Madina – Main Station', '(Near Old Melcom)'],
     ],
   },
-  call: {label: 'CALL US', lines: ['059 599 1981 / 059 306 7798']},
+  call: {label: 'CALL US', number: '059 509 4444'},
+  whatsapp: {label: 'WHATSAPP US', number: '059 306 7798'},
   handle: '@stableplushealthcare',
 };
 export type Campaign = typeof campaign;
